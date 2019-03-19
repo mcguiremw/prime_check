@@ -6,7 +6,6 @@
 - Print Matrix of prime Numbers and their product
     - Indices Row(r) and Col(c) are the prime numbers
     - Products of `r*c` populate matrix
-- Able to test single int with time complexity of `O(log(n))`
 
 ## Running the Code
 - This project was developed using Python 3.7.1 but any version of Python3 _should_ work
@@ -49,3 +48,24 @@ timeit(check(987608350166551))
 timeit(check(964323014774268299))
 1min 42s ± 1.3 s per loop (mean ± std. dev. of 7 runs, 1 loop each)
 ```
+
+#### Profiling the Code
+At first I expected the time complexity to be `O(n(log(n)))` after profiling it looks more like its
+running at `O(n(log(n^2)))`
+
+- Profile for first 10 primes
+
+![Snakeviz cProf 10](profile/img/profile_ten_primes.png)
+
+- Profile for first 20 primes
+
+![Snakeviz cProf 20](profile/img/profile_twenty_primes.png)
+
+- Profile for first 100 primes
+
+![Snakeviz cProf 100](profile/img/profile_one_hundred_primes.png)
+
+
+- Profile for first 1000 primes
+
+![Snakeviz cProf 1000](profile/img/profile_one_thousand_primes.png)
