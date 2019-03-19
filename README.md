@@ -3,10 +3,8 @@
     - Default:
         - No user input
         - Calculate first 10 prime numbers
-    - Optional:
-        - Pass in single integer, calculate all primes up to that int
 - Print Matrix of Prime Numbers and their product
-    - Index Row x Col are the Prime numbers
+    - Indices Row(r) and Col(c) are the Prime numbers
     - Products of `r*c` populate matrix
 - Able to test single int with time complexity of `O(log(n))`
 
