@@ -3,7 +3,7 @@
     - Default:
         - No user input
         - Calculate first 10 prime numbers
-- Print Matrix of prime Numbers and their product
+- Print Matrix of prime numbers and their product
     - Indices Row(r) and Col(c) are the prime numbers
     - Products of `r*c` populate matrix
 
