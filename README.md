@@ -69,3 +69,13 @@ running at `O(n(log(n^2)))`
 - Profile for first 1000 primes
 
 ![Snakeviz cProf 1000](profile/img/profile_one_thousand_primes.png)
+
+#### Run the Profile Visualizer
+To run the profiling tool I used for those screenshots you will need to download an extra tool
+called [Snakeviz](https://jiffyclub.github.io/snakeviz/)
+- Download the tool
+    - `pip install snakeviz`
+- Navigate to the profile directory
+- Start the snakeviz server passing in one for the *cProfile* files
+    - `snakeviz one_thousand_primes.prof`
+    - Navigate to URL generated in the terminal
