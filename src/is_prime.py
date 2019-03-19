@@ -25,7 +25,7 @@ def build_matrix(size):
         if check(i):
             indices.append(i)
         if len(indices) == size:
-            break
+           break
 
     return [[x*y for x in indices] for y in indices]
 
