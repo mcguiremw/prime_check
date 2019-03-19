@@ -32,8 +32,8 @@ def build_matrix(size):
 
 
 def print_matrix(size):
-    """Print a multiplication table with Prime numbers as the Row and Column Indeces.  The matrix
-    will be populated with the Products of the Prime numbers.
+    """Print a multiplication table with prime numbers as the Row and Column Indeces.  The matrix
+    will be populated with the Products of the prime numbers.
 
     Args:
     size  -- the amount of prime numbers to find, starting with 1
