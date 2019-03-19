@@ -1,5 +1,3 @@
-import pytest
-
 from src.is_prime import check
 
 
