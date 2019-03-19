@@ -19,8 +19,15 @@ def check(n):
         return True
 
 
-def build_matrix(indices):
-    return False
+def build_matrix(size):
+    indices = []
+    for i in range(sys.maxsize):
+        if check(i):
+            indices.append(i)
+        if len(indices) == size:
+            break
+
+    return [[x*y for x in indices] for y in indices]
 
 
 def print_matrix(size):
@@ -30,14 +37,9 @@ def print_matrix(size):
     Args:
     size  -- the amount of prime numbers to find, starting with 1
     """
-    indices = []
-    for i in range(sys.maxsize):
-        if check(i):
-            indices.append(i)
-        if len(indices) == 10:
-            break
-
-    print(indices)
+    matrix = build_matrix(size)
+    for x in matrix:
+        print(*x, sep="\t")
 
 
 if __name__=='__main__':
