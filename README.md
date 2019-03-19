@@ -17,6 +17,7 @@
 
 ## Running the Tests
 - From the root directory of the project run the tests using *Pytest*
+    - `pytest -v`
 - Pytest would have been installed from the _requirements.txt_ file see [Running the
   Code](#running-the-code)
 
