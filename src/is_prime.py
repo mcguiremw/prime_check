@@ -21,6 +21,13 @@ def check(n):
 
 
 def build_matrix(size):
+    """Given the amount of prime numbers to find, build a two dimensional array with the prime
+    numbers as the indices for the rows and columns.  Each cell will be the product of their
+    respective row and column indices, return the resulting matrix.
+
+    Args:
+    size -- the amount of prime numbers to find, starting with 1
+    """
     indices = []
     for i in range(sys.maxsize):
         if check(i):
@@ -32,8 +39,7 @@ def build_matrix(size):
 
 
 def print_matrix(size):
-    """Print a multiplication table with prime numbers as the Row and Column Indeces.  The matrix
-    will be populated with the Products of the prime numbers.
+    """Print a multiplication table with prime numbers as the Row and Column Indeces.
 
     Args:
     size  -- the amount of prime numbers to find, starting with 1
@@ -47,5 +53,5 @@ if __name__=='__main__':
     parser = argparse.ArgumentParser(description='Print a Multiplication Table of Primary Numbers')
     parser.add_argument(
         '--primes', nargs='?', const=1, default=10, type=int,
-        help='How many primes would you like to build the multiplication table with')
+        help='How many primes would you like to build the multiplication table with?')
     print_matrix(parser.parse_args().primes)
