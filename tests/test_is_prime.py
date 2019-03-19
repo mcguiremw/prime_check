@@ -3,11 +3,9 @@ import pytest
 from src.is_prime import check
 
 
-def test_int_one():
-    assert check(1) is True
+def test_first_ten_primes():
+    first_ten = [1, 2, 3, 5, 7, 11, 13, 17, 19, 23]
+    assert len(first_ten) == 10
 
-def test_int_two():
-    assert check(2) is True
-
-def test_int_three():
-    assert check(3) is False
+    for n in first_ten:
+        assert check(n) is True
