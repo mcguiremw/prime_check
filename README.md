@@ -55,4 +55,4 @@ running at `O(n(log(n^2)))`
 
 - Profile for first 10 primes
 
-![snakeviz10](profile/img/profile_ten_pimes.png)
+![Snakeviz cProf 10](profile/img/profile_ten_primes.png)
