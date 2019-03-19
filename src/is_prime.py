@@ -44,7 +44,7 @@ def print_matrix(size):
 
 
 if __name__=='__main__':
-    parser = argparse.ArgumentParser(description='Print a multiplication table of Primary Numbers')
+    parser = argparse.ArgumentParser(description='Print a Multiplication Table of Primary Numbers')
     parser.add_argument(
         '--primes', nargs='?', const=1, default=10, type=int,
         help='How many primes would you like to build the multiplication table with')
