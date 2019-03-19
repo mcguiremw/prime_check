@@ -1,3 +1,4 @@
+import argparse
 from math import sqrt
 import sys
 
@@ -43,4 +44,8 @@ def print_matrix(size):
 
 
 if __name__=='__main__':
-    print_matrix(10)
+    parser = argparse.ArgumentParser(description='Print a multiplication table of Primary Numbers')
+    parser.add_argument(
+        '--primes', nargs='?', const=1, default=10, type=int,
+        help='How many primes would you like to build the multiplication table with')
+    print_matrix(parser.parse_args().primes)
