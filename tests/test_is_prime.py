@@ -1,4 +1,4 @@
-from src.is_prime import check
+from src.is_prime import build_matrix, check
 
 
 def test_check_zero():
@@ -29,3 +29,7 @@ def test_large_int_not_prime():
 def test_large_int_prime():
     openssl_gen_prime = 896566843
     assert check(openssl_gen_prime) == True
+
+def test_build_matrix():
+    expected_matrix = [[1, 2, 3, 5], [2, 4, 6, 10], [3, 6, 9, 15], [5, 10, 15, 25]]
+    assert build_matrix(4) == expected_matrix
