@@ -56,3 +56,16 @@ running at `O(n(log(n^2)))`
 - Profile for first 10 primes
 
 ![Snakeviz cProf 10](profile/img/profile_ten_primes.png)
+
+- Profile for first 20 primes
+
+![Snakeviz cProf 20](profile/img/profile_twenty_primes.png)
+
+- Profile for first 100 primes
+
+![Snakeviz cProf 100](profile/img/profile_one_hundred_primes.png)
+
+
+- Profile for first 1000 primes
+
+![Snakeviz cProf 1000](profile/img/profile_one_thousand_primes.png)
